@@ -73,7 +73,7 @@ int main(){
     cin >> name_of_file;
     tokenizer text(sep, n);
     delete [] sep;
-    text.give_adress("/Users/artemijdanilov/Desktop/эвм/third/third/text.txt");
+    text.give_adress(name_of_file);
     while(text.create_tokens() == 0){
         cout << "Enter correct name of file:" << endl;
         cin >> name_of_file;
