@@ -11,7 +11,7 @@ using namespace std;
 
 int main(){
     Autotest();
-    int n = 0, d = 0, r = 0;
+    int n = 0, d = 0, r = 0, l = 0;
     char s = ' ';
     char name_of_file[256];
     cout << "How many separators do you want to use?" << endl;
@@ -155,7 +155,9 @@ int main(){
         }
         if(k == 6){
             if(text.get_number_of_tokens() > 0){
-                cout << "Lenght = " << text.get_lengths_by_n(n) << endl;
+                cout << "Enter index:" << endl;
+                cin >> l;
+                cout << "Lenght = " << text.get_lengths_by_n(l) << endl;
             }
             else{
                 cout << "There is no tokens in text with this separators" << endl;
